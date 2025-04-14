@@ -2,7 +2,7 @@ name: Bot Runner
 
 on:
   schedule:
-    - cron: "*/10 * * * *"
+    - cron: "0 */4 * * *" # every 4 hours
   workflow_dispatch:
 
 jobs:
@@ -20,4 +20,4 @@ jobs:
           DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
         run: |
           pip install -r requirements.txt
-          python main.py
+          timeout 5h python main.py || true

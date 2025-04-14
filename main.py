@@ -52,7 +52,8 @@ async def help(interaction: discord.Interaction):
 async def task_add(interaction: discord.Interaction, task: str, priority: str):
     await interaction.response.send_message(
         embed=discord.Embed(
-            description=f"Task `{task}` with priority '{priority}' added to your todo list.",
+            title="Task Added",
+            description=f"Task `{task}` with priority '{priority}' added to your task list.",
             color=0xffffff
         ),
         ephemeral=True
@@ -62,7 +63,8 @@ async def task_add(interaction: discord.Interaction, task: str, priority: str):
 async def task_list(interaction: discord.Interaction):
     await interaction.response.send_message(
         embed=discord.Embed(
-            description=f"Here are your tasks:\n1. Task 1\n2. Task 2\n3. Task 3",
+            title="Your Tasks",
+            description=f"1. Task 1\n2. Task 2\n3. Task 3",
             color=0xffffff
         ),
         ephemeral=True
