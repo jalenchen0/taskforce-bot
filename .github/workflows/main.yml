@@ -16,6 +16,8 @@ jobs:
           python-version: "3.x"
           architecture: "x64"
       - name: Running Bot
+        env:
+          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
         run: |
           pip install -r requirements.txt
           python main.py
