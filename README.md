@@ -1,6 +1,6 @@
 # Taskforce Bot
 
-A personal task force. A Discord utility and productivity bot that you can use to capture your tasks and reminders. For people who check Discord but forget to check their to-do list and reminders.
+A personal task force. A Discord utility and productivity bot that you can use to capture your tasks and reminders. For people who check Discord but forget to check their to-do list and reminders. Includes a pomodoro timer feature.
 
 You can set priorities from 1 to 3 for your tasks from high to low priority.
 
@@ -19,3 +19,9 @@ __Task Commands__ <br>
 __Reminder Commands__ <br>
 `/reminder add` - Set a new reminder. Prompts you to full out a form. Input a date, a time, and a message. <br>
 `/reminder list` - View all your reminders <br>
+
+__Pomodoro Commands__ <br>
+`/pomodoro start` - Start a Pomodoro session <br>
+`/pomodoro stop` - Stop your current Pomodoro session <br>
+`/pomodoro status` - View the status of your current Pomodoro session <br>
+`/pomodoro settings` - View or change your Pomodoro settings <br>
